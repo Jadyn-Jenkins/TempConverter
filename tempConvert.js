@@ -19,20 +19,22 @@ function init() {
 function convertCtoF() {
     cInput = Number(document.getElementById('tempInput').value);
 
-    if (isNaN(cInput)) {
-        alert('ERROR: INPUT MUST BE JUST NUMBERS (1,22,358)');
+    if (cInput == undefined || cInput == null || isNaN(cInput)) {
+        window.alert('ERROR: INPUT MUST BE JUST NUMBERS (1,22,358)');
     } else {
-        convertedField.innerText = (cInput * (9 / 5)) + 32;
+        convertedField.innerText = ((cInput * (9 / 5)) + 32).toFixed(2);
     }
 }
 
 function convertFtoC() {
-    fInput = document.getElementById('tempInput').value
+    fInput = Number(document.getElementById('tempInput').value)
 
-    if (isNaN(fInput)) {
-        alert('ERROR: INPUT MUST BE JUST NUMBERS (1,22,358)');
+    if (fInput == undefined || fInput == null || isNaN(fInput)) {
+        console.log("Quoi")
+        window.alert('ERROR: INPUT MUST BE JUST NUMBERS (1,22,358)');
     } else {
-        convertedField.innerText = (fInput - 32) * (5 / 9);
+        console.log('Should be working')
+        convertedField.innerText = ((fInput - 32) * (5 / 9)).toFixed(2);
     }
 }
 
