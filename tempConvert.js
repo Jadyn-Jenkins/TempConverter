@@ -20,7 +20,7 @@ function init() {
 
 function convertCtoF() {
     cInput = Number(document.getElementById('tempInput').value);
-    
+
     if (isNaN(cInput)) {
         alert('ERROR: INPUT MUST BE JUST NUMBERS (1,22,358)');
     } else {
@@ -30,13 +30,14 @@ function convertCtoF() {
 
 function convertFtoC() {
     fInput = Number(document.getElementById('tempInput').value)
-    
+
     if (isNaN(fInput)) {
         alert('ERROR: INPUT MUST BE JUST NUMBERS (1,22,358)');
     } else {
         convertedField.innerText = (fInput - 32) * (5 / 9);
     }
 }
+
 function resetAll() {
     convertedField.innerText = 0;
 }
