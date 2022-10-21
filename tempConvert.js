@@ -13,9 +13,7 @@ resetBtn.addEventListener('click', resetAll);
 window.onload = init();
 
 function init() {
-    // convertCtoF();
-    // convertFtoC();
-    // resetAll();
+    resetAll();
 }
 
 function convertCtoF() {
@@ -29,7 +27,7 @@ function convertCtoF() {
 }
 
 function convertFtoC() {
-    fInput = Number(document.getElementById('tempInput').value)
+    fInput = document.getElementById('tempInput').value
 
     if (isNaN(fInput)) {
         alert('ERROR: INPUT MUST BE JUST NUMBERS (1,22,358)');
@@ -39,5 +37,5 @@ function convertFtoC() {
 }
 
 function resetAll() {
-    convertedField.innerText = 0;
+    convertedField.innerText = "";
 }
