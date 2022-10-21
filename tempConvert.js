@@ -37,5 +37,5 @@ function convertFtoC() {
 }
 
 function resetAll() {
-    convertedField.innerText = "";
+    convertedField.innerText = "--";
 }

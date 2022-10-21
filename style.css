@@ -57,8 +57,8 @@ h1 {
 }
 
 form {
-    /* display: flex;
-    flex-flow: row; */
+    width: 395px;
+    height: auto;
 }
 form label{flex-basis: 3;width: 100%;padding: 20px 10px 20px 0px;}
 form input{flex-basis: 3;width: 25%;}
